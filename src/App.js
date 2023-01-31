@@ -1,37 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import FirstPage from "./sections/Firstpage.js";
 
 function App() {
   return (
     <>
       <Header />
-      {/* <!-- SECTION 02 --> */}
-      <section id="section-02">
-        <section>
-          <div id="bold-text">
-            Build your next project faster with SB UI Kit Pro
-          </div>
-          <div id="sub-text">
-            Welcome to SB UI Kit Pro ,a toolkit for building beautiful web
-            interfaces, created by the development team at start Bootstrap
-          </div>
-          <section id="span">
-            <div id="section-02-buttom">
-              <a id="anchor" href="/">
-                View Pages
-              </a>
-            </div>
-            <div id="doc">
-              <a id="anchor" href="/">
-                Documentation
-              </a>
-            </div>
-          </section>
-        </section>
-        <img id="img-one" src="/one.png" alt="" />
-      </section>
+      <FirstPage />
 
-      {/* <!-- section 03 --> */}
       <section id="section-03">
         <section id="first-box">
           <section id="item-box">
@@ -149,13 +126,7 @@ function App() {
             </section>
           </section>
         </section>
-        <section id="nav-color-03"></section>
-        <section className="sec-end">
-          <div>Simple Pricing</div>
-        </section>
-        <section className="sec-end-02">
-          <div>Easy pricing means no surprises.</div>
-        </section>
+        <Footer />
       </section>
 
       {/* <!-- section 05 --> */}

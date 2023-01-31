@@ -83,6 +83,11 @@ body {
   width: 500px;
   height: 400px;
 }
+.section-02-but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #section-02-buttom {
   /* border: 2px solid rgb(91,188,152); */
   display: flex;
@@ -97,6 +102,23 @@ body {
 
   margin-top: 25px;
   margin-left: 5px;
+}
+
+#section-02-buttom-02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(33, 23, 168);
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+#anchor-02 {
+  text-decoration: none;
+  color: white;
 }
 #anchor {
   text-decoration: none;
