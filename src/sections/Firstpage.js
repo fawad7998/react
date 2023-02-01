@@ -27,7 +27,7 @@ const FirstPage = ()=>{
       </section>
       <section className="section-02-but">
       <div id="section-02-buttom-02">
-              <a id="anchor-02" href="/">
+              <a id="anchor-02" href="./sections/SecondPage.js">
                 Next Pages
               </a>
             </div>
