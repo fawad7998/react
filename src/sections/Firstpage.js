@@ -1,7 +1,11 @@
-const FirstPage = ()=>{
-    return(
-      <>
-        <section id="section-02">
+import Header from "../components/Header";
+import { useNavigate } from "react-router-dom";
+const FirstPage = () => {
+  const navigate = useNavigate();
+  return (
+    <>
+      <Header />
+      <section id="section-02">
         <section>
           <div id="bold-text">
             Build your next project faster with SB UI Kit Pro
@@ -26,15 +30,13 @@ const FirstPage = ()=>{
         <img id="img-one" src="/one.png" alt="" />
       </section>
       <section className="section-02-but">
-      <div id="section-02-buttom-02">
-              <a id="anchor-02" href="./sections/SecondPage.js">
-                Next Pages
-              </a>
-            </div>
-      </section>
-      </>
-    )
-} 
-
-
+        <div id="section-02-buttom-02">
+          <button id="anchor-02" onClick={() => navigate("/second")} >
+            Next Pages
+          </button>
+        </div>
+      </section>   
+    </>
+  );
+};
 export default FirstPage;

@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 const Header = () => {
+  const navigate = useNavigate()
   return (
     <>
       <section id="nav_back_color">
@@ -27,7 +29,7 @@ const Header = () => {
           </section>
         </section>
       </section>
-    </>
+         </>
   );
 };
 

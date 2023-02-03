@@ -1,7 +1,15 @@
+import Header from "../components/Header";
+import { useNavigate } from "react-router-dom";
+
 const SecondPage= ()=>{
-    return (
-        <>
-        <section id="section-03">
+  const navigate = useNavigate();
+
+
+
+  return (
+    <>
+      <Header />
+      <section id="section-03">
         <section id="first-box">
           <section id="item-box">
             <div id="rounded">
@@ -118,17 +126,21 @@ const SecondPage= ()=>{
           </section>
         </section>
         <section id="nav-color-03"></section>
-      <section className="sec-end">
-        <div>Simple Pricing</div>
+        <section className="sec-end">
+          <div>Simple Pricing</div>
+        </section>
+        <section className="sec-end-02">
+          <div>Easy pricing means no surprises.</div>
+        </section>
       </section>
-      <section className="sec-end-02">
-        <div>Easy pricing means no surprises.</div>
+      <section className="section-02-but">
+        <div id="section-02-buttom-02">
+          <button onClick={() => navigate("/third")} id="anchor-02-01">
+            Next Pages
+          </button>
+        </div>
       </section>
-      </section>
-
-      </>
-    )
+    </>
+  );
 }
-
-
 export default SecondPage;

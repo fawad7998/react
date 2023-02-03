@@ -118,7 +118,15 @@ body {
   margin-left: 5px;
 }
 #anchor-02 {
-  text-decoration: none;
+  border: none;
+  background-color: rgb(33, 23, 168);
+
+  color: white;
+}
+#anchor-02-01{
+  border: none;
+  background-color: rgb(33, 23, 168);
+
   color: white;
 }
 #anchor {
