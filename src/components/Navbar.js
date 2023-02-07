@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-const Header = () => {
+const Navbar = () => {
   const navigate = useNavigate()
   return (
     <>
@@ -33,4 +33,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

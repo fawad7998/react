@@ -1,14 +1,14 @@
-import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
-const SecondPage= ()=>{
+const SecondPage= (props)=>{
   const navigate = useNavigate();
 
 
 
   return (
     <>
-      <Header />
+      <Navbar  />
       <section id="section-03">
         <section id="first-box">
           <section id="item-box">

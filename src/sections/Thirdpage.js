@@ -1,11 +1,11 @@
-import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const Thirdpage = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
-      <Header />
+      <Navbar />
       <section id="section-05">
         <section id="nav-color-04"></section>
         <section id="sec-05-back"></section>
@@ -78,11 +78,11 @@ const Thirdpage = () => {
       </section>
       <section className="section-02-but">
         <div id="section-02-buttom-02">
-          <button id="anchor-02" onClick={() => navigate("/home")} >
+          <button id="anchor-02" onClick={() => navigate("/home")}>
             Next Pages
           </button>
         </div>
-      </section>   
+      </section>
     </>
   );
 };

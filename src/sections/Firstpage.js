@@ -1,10 +1,10 @@
-import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 const FirstPage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Header />
+      <Navbar />
       <section id="section-02">
         <section>
           <div id="bold-text">

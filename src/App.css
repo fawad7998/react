@@ -1,3 +1,4 @@
+/* import React from "react"; */
 * {
   margin: 0;
   /* padding: 10px 50px 0 50px; */
@@ -17,19 +18,21 @@ body {
   left: 0;
   height: 600px;
   width: 100%;
+  /* background: ${(props)=>props: }; */
   background: linear-gradient(120deg, rgb(42, 72, 228), #6827b0);
-  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  border-radius: 0 0 50% 50%/0 0 100% 100%; 
   transform: scaleX(2.3);
-  /* transform-origin: 0 0; */
+   transform-origin: 0 0;
 }
 #navbar {
   display: flex;
   justify-content: space-between;
   /* padding: 10px 50px 0 50px; */
-  color: white;
+  color: black;
 }
 #navbar-1 {
   display: flex;
+  color: black;
 }
 .site-name {
   font-size: 15px;
@@ -39,6 +42,7 @@ body {
 .nav-items {
   font-size: 12px;
   margin-left: 40px;
+  /* color: black; */
 }
 #nav-item {
   display: flex;
@@ -56,7 +60,8 @@ body {
 }
 .nav-items > a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 /* section 02 */
