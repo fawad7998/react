@@ -18,11 +18,11 @@ body {
   left: 0;
   height: 600px;
   width: 100%;
-  /* background: ${(props)=>props: }; */
+  /* background: ${(props)=>props:"black":"white"}; */
   background: linear-gradient(120deg, rgb(42, 72, 228), #6827b0);
   border-radius: 0 0 50% 50%/0 0 100% 100%; 
   transform: scaleX(2.3);
-   transform-origin: 0 0;
+   /* transform-origin: 0 0; */
 }
 #navbar {
   display: flex;
