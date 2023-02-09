@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+// import Navbar from "../components/Navbar";
 import React, { useState } from "react";
 
 const Textform = () => {
@@ -23,7 +23,7 @@ const Textform = () => {
   const [text,setText] = useState("This is a Text");
  
   return (
-    <>
+    <>  
       {/* <Navbar /> */}
       <div className="container">
         <div className="mb-3">
@@ -53,3 +53,27 @@ const Textform = () => {
 export default Textform;
 
 // (Event) => event.target.value (now we can type in our Textfield ny using this)
+
+// create a javascript code to read words and show how many minutes and seconds to read?
+// var minutes = Math.floor(time / 60);
+
+
+// var seconds = time - minutes * 60;
+
+
+// var hours = Math.floor(time / 3600);
+// time = time - hours * 3600;
+
+
+// function str_pad_left(string,pad,length) {
+//     return (new Array(length+1).join(pad)+string).slice(-length);
+// }
+
+// var finalTime = str_pad_left(minutes,'0',2)+':'+str_pad_left(seconds,'0',2);
+
+
+
+
+//Source: https://stackoverflow.com/questions/3733227
+
+
