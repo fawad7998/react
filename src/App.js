@@ -9,7 +9,7 @@ function App() {
   return (
     <>
         <Routes>
-          <Route path="" element={<FirstPage />} />
+          <Route path="/" element={<FirstPage />} />
           <Route path="/second" element={<SecondPage/>} />
           <Route path="/third" element={<Thirdpage/>} />
           <Route path="/form" element={<Textform/>} />

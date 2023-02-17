@@ -78,7 +78,7 @@ const Thirdpage = () => {
       </section>
       <section className="section-02-but">
         <div id="section-02-buttom-02">
-          <button id="anchor-02" onClick={() => navigate("/home")}>
+          <button id="anchor-02" onClick={() => navigate("/")}>
             Next Pages
           </button>
         </div>
