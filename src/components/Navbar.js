@@ -1,10 +1,14 @@
-import { useNavigate } from "react-router-dom";
-const Navbar = () => {
-  const navigate = useNavigate()
+// import { useNavigate } from "react-router-dom";
+import React from 'react'
+
+const Navbar = (props) => {
+  
+  
+
   return (
     <>
       <section id="nav_back_color">
-        <section id="navbar">
+        <section id={`navbar ${props.mode.backgroundColor}`} >
           <div className="site-name">SITE NAME</div>
           <section id="nav-item">
             <section id="navbar-1">
@@ -25,7 +29,12 @@ const Navbar = () => {
             </section>
             <div className="nav-items" id="button-1">
               <a href="/">Buy Now</a>
-            </div>
+            </div> 
+            <div className="form-check form-switch">
+  <input className="form-check-input" onClick={props.tooglemode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+  <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+</div>
+            {/* <input className="btn btn-primary" onClick={props.tooglemode}>Dark Mode</input> */}
           </section>
         </section>
       </section>

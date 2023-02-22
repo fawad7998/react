@@ -1,9 +1,18 @@
 import Navbar from "../components/Navbar";
-// import {useState}from 'react';
+
+import { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 const FirstPage = () => {
   const navigate = useNavigate();
+  const [mode, SetMode] = useState({ backgroundColor: "white" });
+  let tooglemode = () => {
+    if (mode === "white") {
+      SetMode("white");
+    } else {
+      SetMode("black");
+    }
+  };
 
   // const[abbc, setabbc2] = useState("hello world");
   // setabbc2("765432")
@@ -62,31 +71,31 @@ const FirstPage = () => {
   // data = "3";
 
   // console.log("2nd", data);
-  const cl = console.log;
-function text2(){
-let e = a+b;
-cl(e);
-cons
-  let d = 3;
-  
-  function text(){
-    let b = 2;
-    function text3(){
-      let a= 2;
-      function text4(){
-    let c = 3;
+  //   const cl = console.log;
+  // function text2(){
+  // let e = a+b;
+  // cl(e);
+  // cons
+  //   let d = 3;
 
-    // return console.log(a+b+c+d);
-  }text4();
-} text3();
-  }
-  text();
-}
- text2(); 
+  //   function text(){
+  //     let b = 2;
+  //     function text3(){
+  //       let a= 2;
+  //       function text4(){
+  //     let c = 3;
+
+  //     // return console.log(a+b+c+d);
+  //   }text4();
+  // } text3();
+  //   }
+  //   text();
+  // }
+  //  text2();
 
   return (
     <>
-      <Navbar />
+      <Navbar mode={mode} tooglemode={tooglemode} />
       {/* {abc}/ */}
 
       {/* 
