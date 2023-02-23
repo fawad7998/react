@@ -1,18 +1,18 @@
 import Navbar from "../components/Navbar";
 
-import { useState } from "react";
-
+// import { useState } from "react";
+// 
 import { useNavigate } from "react-router-dom";
 const FirstPage = () => {
   const navigate = useNavigate();
-  const [mode, SetMode] = useState({ backgroundColor: "white" });
-  let tooglemode = () => {
-    if (mode === "white") {
-      SetMode("white");
-    } else {
-      SetMode("black");
-    }
-  };
+  // const [mode, SetMode] = useState({ backgroundColor: "white" });
+  // let tooglemode = () => {
+  //   if (mode === "white") {
+  //     SetMode("white");
+  //   } else {
+  //     SetMode("black");
+  //   }
+  // };
 
   // const[abbc, setabbc2] = useState("hello world");
   // setabbc2("765432")
@@ -95,7 +95,7 @@ const FirstPage = () => {
 
   return (
     <>
-      <Navbar mode={mode} tooglemode={tooglemode} />
+      <Navbar  />
       {/* {abc}/ */}
 
       {/* 

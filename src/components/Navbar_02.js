@@ -1,9 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
+
 
 export default function Navbar_02(props) {
+
+
+  // const [mode, SetMode] = useState({ backgroundColor: "white" });
+  // let tooglemode = () => {
+  //   if (mode === "white") {
+  //     SetMode("black");
+  //   } else {
+  //     SetMode("white");
+  //   }
+  // };
+
   return (
-    <nav className={`navbar navbar-expand-lg ${props.mode} bg-body-tertiary`}>
-  <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid ">
     <a className="navbar-brand" href="#">Navbar</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -36,7 +48,7 @@ export default function Navbar_02(props) {
         <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
       <div className="form-check form-switch">
-  <input className="form-check-input" onClick={props.tooglemode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+  <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
   <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
 </div>
     </div>
